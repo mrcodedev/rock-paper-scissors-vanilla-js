@@ -1,0 +1,43 @@
+html {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: black;
+}
+
+.wrapper > header > img {
+  width: 70px;
+  margin: 20px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a784;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
+
+.game-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.game-container > .score {
+  margin: 20px;
+}
+
+.game-container > .hands {
+  margin: 20px;
+}
+
+.game-container > .actions {
+  margin: 20px;
+}
