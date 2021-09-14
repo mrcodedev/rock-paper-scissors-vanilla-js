@@ -20,24 +20,119 @@ section {
   font-size: 30px;
   color: white;
   font-weight: 700;
+  text-align: center;
 }
 
 .game-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+}
+
+.wrapper-score {
+  margin: 20px;
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  align-items: center;
+  border: 5px solid black;
+  padding: 10px;
+}
+
+.score-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.left,
+.right {
+  width: 45%;
+  text-align: center;
+}
+.center {
+  text-align: center;
+  width: 10%;
+}
+
+.score-participants {
+  display: flex;
+  font-weight: 200;
+}
+
+.score-results {
+  display: flex;
+  font-size: 3rem;
+  font-weight: 800;
+  width: 100%;
+}
+
+.score-division {
+  margin-top: -4px;
+}
+
+.score-participants {
+  width: 100%;
+  padding: 5px 0px 0px 0px;
+}
+
+.score-name-cpu,
+.score-name-human {
+  width: 45%;
+}
+
+.score-icons {
+  width: 100%;
+  display: flex;
+}
+
+.hands {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hands-cpu,
+.hands-human {
+  width: 50%;
+}
+
+.hands-cpu {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 20px 0px 0px;
+}
+
+.hands-human {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 0px 0px 20px;
+}
+
+.actions {
   margin: 20px;
 }
 
-.game-container > .score {
-  margin: 20px;
+.hands-cpu-animation img,
+.hands-cpu-result {
+  display: none;
 }
 
-.game-container > .hands {
-  margin: 20px;
+.hands-human > img {
+  display: none;
 }
 
-.game-container > .actions {
-  margin: 20px;
+.in-game {
+  display: none;
+}
+
+.result-text {
+  display: none;
+  font-weight: 800;
+  font-size: 32px;
 }

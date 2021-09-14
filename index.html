@@ -20,11 +20,54 @@
       Rock paper scissors game!!!
     </section>
     <div class="game-container">
-      <div class="score">
-        SCORE
+      <div class="wrapper-score">
+        <div class="score-title title">
+          SCORE
+        </div>
+        <div class="score-results">
+          <div class="score-cpu left">0</div>
+          <div class="score-division center">:</div>
+          <div class="score-human right">0</div>
+        </div>
+        <div class="score-participants">
+          <div class="score-name-cpu left">CPU</div>
+          <div class="score-name-divison center"></div>
+          <div class="score-name-human right">USER</div>
+        </div>
+        <div class="score-icons">
+          <div class="score-icon-cpu left">🤖</div>
+          <div class="score-icon-divison center"></div>
+          <div class="score-icon-human right">😎</div>
+        </div>
       </div>
-      <div class="hands">HANDS</div>
-      <div class="actions">ACTIONS</div>
+      <div class="hands">
+        <div class="hands-cpu">
+          <div class="hands-cpu-animation in-game">
+            <img id="rock" src="./assets/svg/cpu-rock.svg" alt="Rock" width="180" height="180"/>
+            <img id="paper" src="./assets/svg/cpu-paper.svg" alt="Rock" width="180" height="180"/>
+            <img id="scissors" src="./assets/svg/cpu-scissors.svg" alt="Rock" width="180" height="180" />
+          </div>
+          <div class="hands-cpu-result">
+            <img width="180" height="180" />
+          </div>
+        </div>
+        <div class="hands-human">
+          <img width="180" height="180" />
+        </div>
+      </div>
+      <div class="actions">
+        <div class="actions-game in-game">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissors">Scissors</button>
+        </div>
+        <div class="actions-start start">
+          <button onClick="startGame()">Start</button>
+        </div>
+        <div class="result-text">
+          WIN
+        </div>
+      </div>
     </div>
   </div>
   <script src="./src/app.js"></script>
