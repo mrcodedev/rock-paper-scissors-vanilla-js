@@ -34,17 +34,17 @@ const initApp = () => {
 const startEvents = () => {
   buttonActions.forEach((action) =>
     action.addEventListener("click", (event) => {
-      userChoice = event.target.id;
-
-      imageHumanChoice.src = `./assets/svg/human-${userChoice}.svg`;
+      humanChoice = event.target.id;
+      imageHumanChoice.src = `./assets/svg/human-${humanChoice}.svg`;
       imageHumanChoice.style.display = "inherit";
-      generateComputerChoice();
 
       displayCpuAnimationhands.style.display = "none";
-      imageCpuChoice.src = `./assets/svg/cpu-${cpuChoice}.svg`;
-      displayCpuHandResult.style.display = "inherit";
       clearInterval(interval);
       animation = false;
+
+      generateComputerChoice();
+      imageCpuChoice.src = `./assets/svg/cpu-${cpuChoice}.svg`;
+      displayCpuHandResult.style.display = "inherit";
 
       incrementScore(getResult());
 
@@ -75,7 +75,6 @@ const incrementScore = (result) => {
     resultText.innerHTML = "DRAW";
   }
 
-  displayActionButtons.style.display = "none";
   resultText.style.display = "inherit";
 };
 
@@ -93,7 +92,7 @@ const getResult = () => {
     paperrock: "loose",
   };
 
-  return fightResults[cpuChoice + userChoice] || "draw";
+  return fightResults[cpuChoice + humanChoice] || "draw";
 };
 
 const startAnimation = (time) => {
