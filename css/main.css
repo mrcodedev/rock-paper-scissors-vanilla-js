@@ -87,6 +87,7 @@ section {
 .score-icons {
   width: 100%;
   display: flex;
+  font-size: 25px;
 }
 
 .hands {
