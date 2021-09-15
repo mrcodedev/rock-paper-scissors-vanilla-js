@@ -53,6 +53,7 @@ section {
   width: 45%;
   text-align: center;
 }
+
 .center {
   text-align: center;
   width: 10%;
@@ -136,4 +137,11 @@ section {
   display: none;
   font-weight: 800;
   font-size: 32px;
+}
+
+.hand-image {
+  max-width: 180px;
+  max-height: 180px;
+  width: 100%;
+  height: 180px;
 }
